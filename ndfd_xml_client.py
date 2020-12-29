@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 class MPUD:
     """
     A query-builder for requesting multiple point unsummarized data from
-    the NDFD RESTful API.
+    the NDFD REST API.
 
     Attributes:
         list_lat_lon (str): Properly formatted string of latitude,longitude
@@ -37,13 +37,13 @@ class MPUD:
             Removes one or more NDFD elements from the query list.
         send_query():
             Builds the query url and sends an HttpRequest to the
-            NDFD RESTful API.
+            NDFD REST API.
         get_response():
             Returns the entire response object that was recieved from the
-            NDFD RESTful API, or returns None if there is no response.
+            NDFD REST API, or returns None if there is no response.
         save_xml(filepath=''):
             Saves to disk the xml file recieved in the response from the
-            NDFD RESTful API, or returns 0 if there is no response.
+            NDFD REST API, or returns 0 if there is no response.
     """
 
     __valid_ndfd_elements = ('maxt', 'mint', 'temp', 'dew', 'appt',
@@ -194,7 +194,7 @@ class MPUD:
 
     def send_query(self):
         """
-        Builds the query url and sends an HttpRequest to the NDFD RESTful API.
+        Builds the query url and sends an HttpRequest to the NDFD REST API.
         Expects an xml document in response.
 
         Raises:
@@ -212,7 +212,7 @@ class MPUD:
     def get_response(self):
         """
         Returns the entire response object that was recieved
-        from the NDFD RESTful API, or returns None if there is no response,
+        from the NDFD REST API, or returns None if there is no response,
         which may mean that send_query() has not yet been called.
         """
 
@@ -228,7 +228,7 @@ class MPUD:
     def save_xml(self, filepath=''):
         """
         Saves to disk the xml file recieved in the response
-        from the NDFD RESTful API. Returns 0 if there is no response,
+        from the NDFD REST API. Returns 0 if there is no response,
         which may mean that send_query() has not yet been called.
 
         Args:

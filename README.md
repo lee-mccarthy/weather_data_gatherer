@@ -1,6 +1,6 @@
 # weather_data_gatherer
 
-A tool for gathering weather forecast data from the NDFD RESTful API.
+A tool for gathering weather forecast data from the [NDFD REST API](https://graphical.weather.gov/xml/rest.php).
 
 The file 'ndfd_xml_client.py' is for general use, but the rest of this repo was  
 made for a specific client. Logan McCarthy uses this repo to gather data for  
@@ -24,7 +24,7 @@ watch him on [YouTube](https://www.youtube.com/user/Paradoxwidget), [Twitch](htt
 ### ndfd_xml_client.py
 
 Includes a class called `MPUD` (an acronym for Multiple Point Unsummarized  
-Data) that interacts with the NDFD RESTful API. Information about this API can  
+Data) that interacts with the NDFD REST API. Information about this API can  
 be found at <https://graphical.weather.gov/xml/rest.php>, and valid query  
 elements can be found at  
 <https://graphical.weather.gov/xml/docs/elementInputNames.php>.
@@ -33,13 +33,13 @@ It is recommended to use this class in the following manner:
 
 1. Construct a weather data query at object initialization or using the various  
 methods.
-2. Send the query to the NDFD RESTful API using `send_query()`.
+2. Send the query to the NDFD REST API using `send_query()`.
 3. Save a copy of the xml file returned from the API using `save_xml()`.
 
 ### main<span>.</span>py
 
 This file was written for a very specific use case. It uses the `MPUD` class  
-from 'ndfd_xml_client.py' to query the NDFD RESTful API for tomorrow's "maxt"  
+from 'ndfd_xml_client.py' to query the NDFD REST API for tomorrow's "maxt"  
 values in various locations defined in 'program_data/cities.csv'. The xml file  
 is saved in 'program_data/xml/', and a .txt file containing parsed and  
 formatted data is saved in 'weather_reports/'.
