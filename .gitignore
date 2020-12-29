@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Program generated files
+/program_data/last_query_time.txt
+/program_data/xml/*
+/weather_reports/*
