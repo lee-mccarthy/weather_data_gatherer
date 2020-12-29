@@ -130,5 +130,5 @@ dmypy.json
 
 # Program generated files
 /program_data/last_query_time.txt
-/program_data/xml/*
-/weather_reports/*
+/program_data/xml/*.xml
+/weather_reports/*.txt
