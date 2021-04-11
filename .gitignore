@@ -110,6 +110,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Visual Studio Code project settings
+.vscode/
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -128,7 +131,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Program generated files
+# Program specific files
+*.bat
 /national/program_data/last_query_time.txt
 /national/program_data/xml/*
 !/national/program_data/xml/.keep
