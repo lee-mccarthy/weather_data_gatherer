@@ -138,3 +138,8 @@ dmypy.json
 !/national/program_data/xml/.keep
 /national/weather_reports/*
 !/national/weather_reports/.keep
+/world/program_data/last_query_time.txt
+/world/program_data/json/*
+!/world/program_data/json/.keep
+/world/program_data/weather_reports/*
+!/world/program_data/weather_reports/.keep
