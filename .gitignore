@@ -129,8 +129,8 @@ dmypy.json
 .pyre/
 
 # Program generated files
-/program_data/last_query_time.txt
-/program_data/xml/*
-!/program_data/xml/.keep
-/weather_reports/*
-!/weather_reports/.keep
+/national/program_data/last_query_time.txt
+/national/program_data/xml/*
+!/national/program_data/xml/.keep
+/national/weather_reports/*
+!/national/weather_reports/.keep
