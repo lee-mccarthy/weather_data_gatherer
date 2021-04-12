@@ -127,10 +127,17 @@ def main():
     while os.path.exists(f'./weather_reports/{filename}'):
         filename = f'{target_date.isoformat()}_wx_forecast({i}).txt'
         i += 1
+    try:
+        with open('./program_data/linebreaks.txt', 'r') as f:
+            linebreaks = f.read()
+    except FileNotFoundError:
+        linebreaks = ''
     with open(f'./weather_reports/{filename}', 'w') as f:
         f.write('Country - City - Daily Maximum Temperature\n\n')
         for forecast in forecasts:
             f.write(forecast[0] + ' - ' + forecast[1] + ' - ' + forecast[2] + '\n')
+            if f'"{forecast[0]}";"{forecast[1]}"' in linebreaks:
+                f.write('\n')
 
     # Wrap things up
     cleanup_json_files(30)
