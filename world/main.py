@@ -119,6 +119,8 @@ def main():
             if day['forecastDate'] == target_date.isoformat():
                 max_temp = day['maxTemp']
                 break
+        else:
+            max_temp = 'N/A'
         forecasts.append((country, city, max_temp))
 
     # Log the forecasts
