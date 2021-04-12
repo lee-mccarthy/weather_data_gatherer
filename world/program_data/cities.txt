@@ -33,3 +33,4 @@
 "Sudan";"Khartoum";"249"
 "South Africa";"Johannesburg";"139"
 "Myanmar";"Yangon";"232"
+"Australia";"Sydney";"300"

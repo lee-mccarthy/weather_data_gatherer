@@ -141,5 +141,5 @@ dmypy.json
 /world/program_data/last_query_time.txt
 /world/program_data/json/*
 !/world/program_data/json/.keep
-/world/program_data/weather_reports/*
-!/world/program_data/weather_reports/.keep
+/world/weather_reports/*
+!/world/weather_reports/.keep
