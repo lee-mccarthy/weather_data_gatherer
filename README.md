@@ -5,7 +5,7 @@ A tool for gathering weather forecast data from the [NDFD REST API](https://grap
 The file 'ndfd_xml_client.py' is for general use, but the rest of this repo was  
 made for a specific client. Logan McCarthy uses this repo to gather data for  
 a weather report segment that he does at the beginning of his streams. You can  
-watch him on [YouTube](https://www.youtube.com/user/Paradoxwidget), [Twitch](https://www.twitch.tv/longhairlogan), and [Facebook](https://www.facebook.com/LoganMcCarthySadLogos).
+watch him on [YouTube](https://www.youtube.com/user/Paradoxwidget).
 
 ## Table of Contents
 
