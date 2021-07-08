@@ -1,6 +1,0 @@
-"Brazil";"Sao Paulo";"1083"
-"Egypt";"Cairo";"248"
-"Iraq";"Baghdad";"1464"
-"Nigeria";"Lagos";"258"
-"Russian Federation";"Moscow";"206"
-"Sudan";"Khartoum";"249"

@@ -133,13 +133,8 @@ dmypy.json
 
 # Program specific files
 *.bat
-/national/program_data/last_query_time.txt
-/national/program_data/xml/*
-!/national/program_data/xml/.keep
-/national/weather_reports/*
-!/national/weather_reports/.keep
-/world/program_data/last_query_time.txt
-/world/program_data/json/*
-!/world/program_data/json/.keep
-/world/weather_reports/*
-!/world/weather_reports/.keep
+/program_data/last_query_time.txt
+/program_data/xml/*
+!/program_data/xml/.keep
+/weather_reports/*
+!/weather_reports/.keep
